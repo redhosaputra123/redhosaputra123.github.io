@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorcycle Showroom</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="background-music" loop>
+      <source src="path/to/your/AaronSmith-Dancin.mp3" type="audio/mpeg" />
+    </audio>
+
+    <header>
+      <div class="logo">
+        <h1>MotorMania</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#bikes">Bikes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="hero">
+        <div>
+          <h2>Find Your Dream Motorcycle</h2>
+          <p>Explore our wide selection of bikes</p>
+          <a href="#bikes" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About Us</h2>
+      <p>
+        MotorMania is your one-stop destination for buying and selling used
+        motorcycles. We offer a variety of top brands and models to fit every
+        rider's needs. Our goal is to provide the best service and highest
+        quality bikes to our customers.
+      </p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section id="bikes" class="content-section">
+      <h2>Our Bikes</h2>
+      <div class="bike-grid">
+        <!-- Motor yang sudah ada -->
+        <div class="bike-card" data-modal="modal1">
+          <img src="images/R1.jpeg" alt="Yamaha R1" />
+          <h3>Yamaha R1</h3>
+          <p>Price: $10,000</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 998cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 200 hp @ 13,500 rpm</li>
+              <li>Torque: 112.4 Nm @ 11,500 rpm</li>
+              <li>Weight: 199 kg (wet)</li>
+              <li>Top Speed: 299 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal2">
+          <img src="images/honda-cbr500r-21-01.jpg" alt="Honda CBR500R" />
+          <h3>Honda CBR500R</h3>
+          <p>Price: $7,500</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 471cc, liquid-cooled, parallel twin</li>
+              <li>Power: 47 hp @ 8,600 rpm</li>
+              <li>Torque: 43 Nm @ 6,500 rpm</li>
+              <li>Weight: 192 kg (wet)</li>
+              <li>Top Speed: 185 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal3">
+          <img
+            src="images/24MY_Ninja_ZX-6R_GN1_STU__1_.jpg"
+            alt="Kawasaki Ninja ZX-6R"
+          />
+          <h3>Kawasaki Ninja ZX-6R</h3>
+          <p>Price: $9,000</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 636cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 130 hp @ 13,500 rpm</li>
+              <li>Torque: 70.5 Nm @ 11,000 rpm</li>
+              <li>Weight: 197 kg (wet)</li>
+              <li>Top Speed: 260 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal4">
+          <img src="images/DucatiPanigaleV4.jpg" alt="Ducati Panigale V4" />
+          <h3>Ducati Panigale V4</h3>
+          <p>Price: $12,500</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 1103cc, liquid-cooled, V4</li>
+              <li>Power: 214 hp @ 13,000 rpm</li>
+              <li>Torque: 124 Nm @ 10,000 rpm</li>
+              <li>Weight: 198 kg (wet)</li>
+              <li>Top Speed: 302 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal5">
+          <img src="images/bmws1000rr.jpeg" alt="BMW S1000RR" />
+          <h3>BMW S1000RR</h3>
+          <p>Price: $11,000</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 999cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 205 hp @ 13,500 rpm</li>
+              <li>Torque: 113 Nm @ 10,500 rpm</li>
+              <li>Weight: 197 kg (wet)</li>
+              <li>Top Speed: 303 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal6">
+          <img src="images/Suzuki-GSX-R-750.jpg" alt="Suzuki GSX-R750" />
+          <h3>Suzuki GSX-R750</h3>
+          <p>Price: $8,500</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 749cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 148 hp @ 13,000 rpm</li>
+              <li>Torque: 81 Nm @ 11,500 rpm</li>
+              <li>Weight: 186 kg (wet)</li>
+              <li>Top Speed: 280 km/h</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Motor tambahan -->
+        <div class="bike-card" data-modal="modal7">
+          <img src="images/ktm890duke.png" alt="KTM 890 Duke" />
+          <h3>KTM 890 Duke</h3>
+          <p>Price: $9,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 889cc, liquid-cooled, parallel twin</li>
+              <li>Power: 115 hp @ 9,000 rpm</li>
+              <li>Torque: 92 Nm @ 7,500 rpm</li>
+              <li>Weight: 169 kg (wet)</li>
+              <li>Top Speed: 200 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal8">
+          <img
+            src="images/2023-Yamaha-MT09-EU-Icon_Blue-Studio-001-03.jpg"
+            alt="Yamaha MT-09"
+          />
+          <h3>Yamaha MT-09</h3>
+          <p>Price: $8,499</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 847cc, liquid-cooled, inline 3-cylinder</li>
+              <li>Power: 115 hp @ 10,000 rpm</li>
+              <li>Torque: 87.5 Nm @ 8,500 rpm</li>
+              <li>Weight: 193 kg (wet)</li>
+              <li>Top Speed: 220 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal9">
+          <img
+            src="images/2017-Honda-CBR1000RR_SP2-super-high-resolution-01.webp"
+            alt="Honda CBR1000RR"
+          />
+          <h3>Honda CBR1000RR</h3>
+          <p>Price: $16,499</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 999cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 189 hp @ 13,000 rpm</li>
+              <li>Torque: 114 Nm @ 11,000 rpm</li>
+              <li>Weight: 200 kg (wet)</li>
+              <li>Top Speed: 300 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal10">
+          <img
+            src="images/2016-Suzuki-GSXR1000-Commemorative-Edition4.jpg"
+            alt="Suzuki GSX-R1000"
+          />
+          <h3>Suzuki GSX-R1000</h3>
+          <p>Price: $14,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 999cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 199 hp @ 13,200 rpm</li>
+              <li>Torque: 117.6 Nm @ 10,000 rpm</li>
+              <li>Weight: 202 kg (wet)</li>
+              <li>Top Speed: 299 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal11">
+          <img src="images/ninjah2.jpg" alt="Kawasaki Ninja H2" />
+          <h3>Kawasaki Ninja H2</h3>
+          <p>Price: $29,000</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 998cc, supercharged inline 4-cylinder</li>
+              <li>Power: 228 hp @ 11,600 rpm</li>
+              <li>Torque: 141.7 Nm @ 11,000 rpm</li>
+              <li>Weight: 238 kg (wet)</li>
+              <li>Top Speed: 400 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal12">
+          <img src="images/8-01 MONSTER 1200 R.jpg" alt="Ducati Monster 1200" />
+          <h3>Ducati Monster 1200</h3>
+          <p>Price: $14,295</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 1198cc, liquid-cooled, L-twin</li>
+              <li>Power: 147 hp @ 9,250 rpm</li>
+              <li>Torque: 124 Nm @ 4,000 rpm</li>
+              <li>Weight: 209 kg (wet)</li>
+              <li>Top Speed: 260 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal13">
+          <img src="images/harley.jpeg" alt="Harley Davidson Fat Boy" />
+          <h3>Harley Davidson Fat Boy</h3>
+          <p>Price: $19,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 1868cc, air-cooled, V-twin</li>
+              <li>Power: 92 hp @ 5,020 rpm</li>
+              <li>Torque: 155 Nm @ 3,000 rpm</li>
+              <li>Weight: 303 kg (wet)</li>
+              <li>Top Speed: 170 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal14">
+          <img
+            src="images/2023-Triumph-Street-Triple-RS-Carbon-Black-front-right.jpg"
+            alt="Triumph Street Triple"
+          />
+          <h3>Triumph Street Triple</h3>
+          <p>Price: $10,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 765cc, liquid-cooled, inline 3-cylinder</li>
+              <li>Power: 118 hp @ 11,750 rpm</li>
+              <li>Torque: 77 Nm @ 9,100 rpm</li>
+              <li>Weight: 168 kg (wet)</li>
+              <li>Top Speed: 225 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal15">
+          <img
+            src="images/KTM-1290-Superduke-2019-700px.jpg"
+            alt="KTM 1290 Super Duke R"
+          />
+          <h3>KTM 1290 Super Duke R</h3>
+          <p>Price: $18,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 1301cc, liquid-cooled, V-twin</li>
+              <li>Power: 180 hp @ 9,500 rpm</li>
+              <li>Torque: 140 Nm @ 8,000 rpm</li>
+              <li>Weight: 189 kg (wet)</li>
+              <li>Top Speed: 250 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal16">
+          <img
+            src="images/Yamaha-YZF-R6-2019-Pronto-en-Argentina-06.webp"
+            alt="Yamaha YZF-R6"
+          />
+          <h3>Yamaha YZF-R6</h3>
+          <p>Price: $12,199</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 599cc, liquid-cooled, inline 4-cylinder</li>
+              <li>Power: 117 hp @ 14,500 rpm</li>
+              <li>Torque: 61.7 Nm @ 10,500 rpm</li>
+              <li>Weight: 190 kg (wet)</li>
+              <li>Top Speed: 299 km/h</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Motor tambahan -->
+        <div class="bike-card" data-modal="modal17">
+          <img src="images/bmw.jpeg" alt="BMW R1250GS" />
+          <h3>BMW R1250GS</h3>
+          <p>Price: $19,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 1254cc, air/liquid-cooled, flat twin</li>
+              <li>Power: 136 hp @ 7,750 rpm</li>
+              <li>Torque: 143 Nm @ 6,250 rpm</li>
+              <li>Weight: 249 kg (wet)</li>
+              <li>Top Speed: 200 km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bike-card" data-modal="modal18">
+          <img src="images/hondaaffrika.jpeg" alt="Honda Africa Twin" />
+          <h3>Honda Africa Twin</h3>
+          <p>Price: $14,999</p>
+          <div class="specifications">
+            <h4>Specifications:</h4>
+            <ul>
+              <li>Engine: 1084cc, liquid-cooled, parallel twin</li>
+              <li>Power: 101 hp @ 7,500 rpm</li>
+              <li>Torque: 105 Nm @ 6,250 rpm</li>
+              <li>Weight: 226 kg (wet)</li>
+              <li>Top Speed: 180 km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 MotorMania. All rights reserved.</p>
+      <p>
+        Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </p>
+    </footer>
+
+    <!-- Modals for each bike -->
+    <!-- Modal structure remains unchanged -->
+
+    <script src="script.js"></script>
+    <script>
+      // Function to play audio
+      function playMusic() {
+        const music = document.getElementById("background-music");
+        music.play();
+      }
+
+      // Play music after the page is loaded
+      window.onload = function () {
+        // You can use a user interaction to play music for browsers that block autoplay
+        document.body.addEventListener("click", playMusic);
+        // Optionally, you can also call playMusic here if you want to play automatically without interaction
+        // playMusic();
+      };
+    </script>
+  </body>
+</html>
